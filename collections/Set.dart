@@ -23,4 +23,15 @@ void main() {
   // intersection
   print(euCountries.intersection(asianCountries)); // {Russia}
   print(euCountries.difference(asianCountries)); //{Italy, Uk}
+
+  // Exercise
+  const a = {1, 3};
+  const b = {3, 5};
+  final c = a.union(b);
+  final difference = c.difference(a.intersection(b));
+  print(difference);
+  var sum = 0;
+  for (var value in difference) {
+    sum += value;
+  }
 }
